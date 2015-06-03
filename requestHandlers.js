@@ -12,7 +12,6 @@ function start(res) {
 	res.end();
 };
 
-
 //	Is currently causing problems when requesting /upload directly
 function upload(res, req) {
 	console.log("request handler 'upload' was called");
