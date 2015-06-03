@@ -33,15 +33,15 @@ function upload(res, req) {
 
 		res.writeHead(200, {"Content-Type": "text/html"});
 		res.write("received file:<br/>");
-		res.end("<img src='/show' />");
+		res.write("<img src='/show' />");
+		res.end();
 	});
 }
 
 function show(res) {
 	console.log("request handler 'show' was called");
-	res.writeHead(200, {"Content-Type": "text/plain"});
+	res.writeHead(200, {"Content-Type": "image/png"});
 	fs.createReadStream("/tmp/test.png").pipe(res);
-	res.write('showing stuff<br/>');
 	// res.write(
 	// 	    '<form action="/upload" enctype="multipart/form-data" method="post">'+
  //    '<input type="text" name="title"><br>'+
