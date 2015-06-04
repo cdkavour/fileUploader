@@ -1,12 +1,13 @@
 {
-	"name": "fileUploader.js",
-	"description": "file upload module",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "nodemon index.js"
-	},
-	"dependencies": {
-		"formidable": "*"
-	}
+  "name": "fileUploader.js",
+  "description": "file upload module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "formidable": "^1.0.17"
+  }
 }
